@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        /* Your existing CSS styles */
+        body {
+            font-family: 'meta-serif';
+            /* padding: 0; */
+            background-color: white;
+            /* margin: 0; */
+            color: black;
+            text-align:center;
+        }
+
+        .footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+                text-align: center;
+        }
+
+        form {
+            display: inline-block;
+        }
+        h1 {
+            color: purple;
+        }
+        .paragraph {
+            margin: 0 auto; /* Center the paragraph horizontally */
+            margin-bottom: 20px;
+            text-align: center;
+            width: 400px;
+        }
+
+        #top {
+            background-color: #9C59D1;
+            height: 100px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 40px;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #content {
+            position: absolute;
+            top: 110px;
+            width: 100%;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            font-size: 30px;
+            padding: 5px 20px;
+            border-radius: 7px;
+            border: 1px solid #fff;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            color: #000;
+            background-color: pink;
+            border: 1px solid #000;
+        }
+
+        #link-button {
+            text-decoration: none;
+            color: #fff;
+            font-size: 50px;
+            padding: 5px 20px;
+            border-radius: 7px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #link-button:hover {
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #000;
+            text-shadow: 2px 2px 4px #fff;
+        }
+
+        .menu-icon {
+            display: inline-block;
+            vertical-align: top;
+            float: left;
+            padding-top: 60px;
+            margin-left: 15px;
+        }
+
+        .menu-icon img {
+            width: 125px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+
+        /* Hamburger Menu Styles */
+        .hamburger-menu {
+            display: none; /* Initially hide */
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #000;
+            margin: 4px 0;
+        }
+
+        /* Media Query for Small Screens */
+        @media screen and (max-width: 768px) {
+            .menu-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff; /* Change the background color as needed */
+                padding: 10px;
+                width: 100%;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 1000; /* Ensure it appears above other content */
+                display: none; /* Hide menu links initially on small screens */
+            }
+            .menu-links.show {
+                display: block; /* Show menu links when the class 'show' is added */
+            }
+            .hamburger-menu {
+                display: block; /* Show hamburger icon */
+            }
+        
+        }
+    </style>
+</head>
+<body>
+
+    <br/>
+        <label>Search:</label> <input type="text" name='name' id='name'> <br/>
+        <input type="radio" id="company" name="contact" value="companyName" />
+            <label for="company">Company Name</label>
+
+      <input type="radio" id="ticker" name="contact" value="tickerName" />
+      <label for="ticker">Ticker</label><br/>
+        <input type= "submit" value="submit" id = 'email-btn'>
+    </form>
+
+
+    
+</html>
