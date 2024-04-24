@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "stock ticker",
+  "main": "server1.js",
+  "scripts": {
+    "test": "hi",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "stockticker"
+  },
+  "keywords": [
+    "stock"
+  ],
+  "author": "emi",
+  "license": "UNLICENSED"
+}
